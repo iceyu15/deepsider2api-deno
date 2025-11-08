@@ -2,7 +2,6 @@ name: Deploy
 on:
   push:
     branches: main
-  workflow_dispatch: {}   # ← 没这行就加上
   pull_request:
     branches: main
 
@@ -38,7 +37,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "iceyu15-deepsider2a-92"
+          project: "iceyu15-deepsider2api-deno"
           entrypoint: "main.ts"
           root: ""
           
