@@ -2,6 +2,7 @@ name: Deploy
 on:
   push:
     branches: main
+  workflow_dispatch: {}   # ← 没这行就加上
   pull_request:
     branches: main
 
